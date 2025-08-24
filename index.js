@@ -1,12 +1,12 @@
-price = 400000;
+const price = 400000;
 priceSpan = document.querySelector(".initial-price");
-priceSpan.innerHTML = price;
+priceSpan.innerHTML = price.toLocaleString("es-CO");
 
-amount = 0;
+let amount = 0;
 amountSpan = document.querySelector(".amount");
 amountSpan.innerHTML = amount;
 
-totalToPay = 0;
+let totalToPay = 0;
 totalSpan = document.querySelector(".total");
 totalSpan.innerHTML = totalToPay;
 
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     amountSpan.innerHTML = addAmount;
     totalToPay = addAmount * price;
-    totalSpan.innerHTML = totalToPay;
+    totalSpan.innerHTML = totalToPay.toLocaleString("es-CO");
   };
 
   subtractButton.onclick = () => {
@@ -29,6 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     amountSpan.innerHTML = subtractAmount;
     totalToPay = subtractAmount * price;
-    totalSpan.innerHTML = totalToPay;
+    totalSpan.innerHTML = totalToPay.toLocaleString("es-CO");
   };
 });

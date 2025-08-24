@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculando el total</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <section>
-        <div class="card">
-            <div class="img-card"></div>
-              <h6>Laptop Gamer AMD</h6>
-              <p>Precio base: $<span class="initial-price"></span> </p>
-              <p>Cantidad:
-                <span class="amount">0</span>
-                               <button id="subtractButton"
-                >-</button> <button id="addButton" 
-                >+</button>
-
-              </p>
-            </div>
+      <div class="card">
+        <div class="information-card">
+          <div class="img-card"></div>
+          <div class="items-card">
+            <h6>Laptop Gamer AMD</h6>
+            <p class="price-text">Precio base: $<span class="initial-price"></span></p>
+            <p class="price-text">
+              Cantidad:
+              <span class="amount">0</span>
+              <button id="subtractButton">-</button>
+              <button id="addButton">+</button>
+            </p>
+          </div>
         </div>
+        <div class="total-section">
+          <p class="total-text">Total: $<span class="total"></span></p>
+        </div>
+      </div>
     </section>
-    <div class="total-section">
-        <p>Total a pagar: $<span class="total"></span> </p>
-    </div>
-    <script src="index.js">
-    </script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
